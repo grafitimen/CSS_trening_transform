@@ -23,6 +23,7 @@ body {
     font-size: 25px;
     color: antiquewhite;
     text-transform: uppercase;
+    transition: all 1s ease 0.2s;
 }
 
 .subtitle { 
@@ -52,10 +53,9 @@ body {
 
 	&__square { 
         background-color: rgb(38, 83, 38);
-        transition: 1s;
 
         &:hover {
-            transform: translate(100px, 0px);
+            transform: translate(50px, 50px);
         }
     }
 }

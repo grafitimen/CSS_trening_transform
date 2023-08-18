@@ -25,6 +25,8 @@ body {
 	font-size: 25px;
 	color: antiquewhite;
 	text-transform: uppercase;
+	-webkit-transition: all 1s ease 0.2s;
+	transition: all 1s ease 0.2s;
 }
 
 .subtitle {
@@ -58,10 +60,8 @@ body {
 
 .translate__square {
 	background-color: rgb(38, 83, 38);
-	-webkit-transition: 1s;
-	transition: 1s;
 }
 .translate__square:hover {
-	-webkit-transform: translate(100px, 0px);
-	        transform: translate(100px, 0px);
+	-webkit-transform: translate(50px, 50px);
+	        transform: translate(50px, 50px);
 }
