@@ -1,17 +1,17 @@
-body {
-    margin: 0 auto;
-}
+@import "nullstyle.scss";
 
 .sec { 
-
+    margin: 0 0 80px 0;
+    max-width: 800px;
 }
 
 .title { 
     font-size: 30px;
-    color: #fff;
+    color: #00ff7b;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
+    margin: 0 0 50px 0;
 }
 
 .square { 
@@ -21,22 +21,22 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 25px;
-    color: antiquewhite;
+    color: rgb(251, 250, 202);
     text-transform: uppercase;
     transition: all 1s ease 0.2s;
+    margin: 0 0 30px 0;
 }
 
 .subtitle { 
     font-size: 22px;
     color: #fff;
-    max-width: 800px;
     letter-spacing: 1px;
     line-height: 30px;
 
     & span {
         font-weight: 700;
         text-transform: uppercase;
-        color: rgb(153, 233, 133);
+        color: rgb(180, 166, 238);
     }
 }
 
@@ -46,7 +46,6 @@ body {
     padding: 50px 20px 0 20px;
     flex-direction: column;
     background-color: rgb(53, 51, 51);
-    height: 100vh;
 }
 
 .translate {
@@ -56,6 +55,28 @@ body {
 
         &:hover {
             transform: translate(50px, 50px);
+        }
+    }
+}
+
+.scale {
+    
+	&__square { 
+        background-color: rgb(63, 35, 62);
+
+        &:hover {
+            transform: scale(1.5, 1.5);
+        }
+    }
+}
+
+.rotate {
+    
+	&__square { 
+        background-color: rgb(35, 36, 63);
+
+        &:hover {
+
         }
     }
 }
