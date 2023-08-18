@@ -102,8 +102,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 25px;
 	color: rgb(251, 250, 202);
 	text-transform: uppercase;
-	-webkit-transition: all 1s ease 0.2s;
-	transition: all 1s ease 0.2s;
+	-webkit-transition: all 0.2s ease 0.2s;
+	transition: all 0.2s ease 0.2s;
 	margin: 0 0 30px 0;
 }
 
@@ -152,4 +152,49 @@ h1, h2, h3, h4, h5, h6 {
 
 .rotate__square {
 	background-color: rgb(35, 36, 63);
+}
+.rotate__square:hover {
+	-webkit-transform: rotate(90deg);
+	        transform: rotate(90deg);
+}
+
+.skew__title span {
+	text-transform: lowercase;
+}
+.skew__square {
+	background-color: rgb(61, 63, 35);
+}
+.skew__square:hover {
+	-webkit-transform: skew(20deg, 20deg);
+	        transform: skew(20deg, 20deg);
+}
+
+.matrix__title span {
+	text-transform: lowercase;
+}
+.matrix__subtitle span:nth-child(2) {
+	text-transform: lowercase;
+}
+.matrix__square {
+	background-color: rgb(63, 42, 35);
+}
+.matrix__square:hover {
+	-webkit-transform: matrix(2, 0, 0, 2, 120, -100);
+	        transform: matrix(2, 0, 0, 2, 120, -100);
+}
+
+.multi__square {
+	background-color: rgb(38, 72, 83);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	gap: 15px;
+}
+.multi__square:hover {
+	-webkit-transform: translate(50px, 50px) scale(1.5, 1.5) rotate(360deg);
+	        transform: translate(50px, 50px) scale(1.5, 1.5) rotate(360deg);
 }

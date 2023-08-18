@@ -48,6 +48,48 @@
             </p>
         </div>
 
+        <div class="skew sec">
+            <p class="skew__title title">skew <span>(x-угол+deg, y-угол+deg)</span></p>
+            <div class="skew__square square">
+                skew
+            </div>
+            <p class="skew__subtitle subtitle">
+                <span>skew</span> - деформирует (искажает) стороны объекта 
+                относительно координатных осей. Если указано одно значение, 
+                второе будет определено браузером автоматически. Записываются 
+                значения как градус поворота и deg
+            </p>
+        </div>
+
+        <div class="matrix sec">
+            <p class="matrix__title title">matrix <span>(a, c, b, d, x, y)</span></p>
+            <div class="matrix__square square">
+                matrix
+            </div>
+            <p class="matrix__subtitle subtitle">
+                <span>matrix </span>
+                <span>(a, c, b, d, x, y)</span>
+                 - позволяет объеденить несколько функций 
+                 2D-трансформаций в одной. В качестве трансформации 
+                 допустимы поворот, маштабирование, наклон (деформация) 
+                 и изменение положения. Свойства указываются без единиц 
+                 измерения.
+            </p>
+        </div>
+        
+        <div class="multi sec">
+            <p class="multi__title title">Множественные 2D трансформации</p>
+            <div class="multi__square square">
+                <span>translate</span>
+                <span>scale </span>
+                <span>rotate</span>
+            </div>
+            <p class="multi__subtitle subtitle">
+                Так же, подобного можно добиться используя 
+                множественные трансформации. А именно записать 
+                несколько значений в одно свойство transform
+            </p>
+        </div>
     </div>
 </body>
 </html>
