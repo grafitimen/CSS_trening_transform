@@ -2,7 +2,7 @@
 
 .sec { 
     margin: 0 0 80px 0;
-    max-width: 800px;
+    max-width: 700px;
 }
 
 .title { 
@@ -35,7 +35,7 @@
     font-size: 25px;
     color: rgb(251, 250, 202);
     text-transform: uppercase;
-    transition: all .5s ease 0.2s;
+    transition: all .7s ease 0.2s;
 }
 
 .subtitle { 
@@ -184,3 +184,55 @@
     }
 }
 
+.translate3D {
+
+	&__square { 
+        background-color: #653a66;
+
+        &:hover {
+            transform: perspective(700px) translate3d(50px, -50px, 200px);
+        }
+    }
+}
+
+.scale3D {
+
+	&__square { 
+        background-color: #3a6663;
+
+        &:hover {
+            transform: perspective(700px) scale3d(2, 2, 5);
+        }
+    }
+}
+
+.rotate3D {
+
+	&__square { 
+        background-color: #3a3c66;
+        
+        &:hover {
+            transform: perspective(700px) rotate3d(1, 1, 1, 45deg);
+        }
+    }
+}
+
+.matrix3D {
+	&__title { 
+
+        span {
+            text-transform: lowercase;
+            font-weight: 400;
+        }
+    }
+
+	&__square { 
+
+        background-color: #682323;
+
+        &:hover {
+            transform: matrix3d(0.5041,-0.71,0.71,0,0.71,0.5041,0.71,0,-0.71,-0.71,0.5041,0,100,-100,300,1);
+        }
+    }
+
+}

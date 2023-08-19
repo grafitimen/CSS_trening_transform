@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 .sec {
 	margin: 0 0 80px 0;
-	max-width: 800px;
+	max-width: 700px;
 }
 
 .title {
@@ -113,8 +113,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 25px;
 	color: rgb(251, 250, 202);
 	text-transform: uppercase;
-	-webkit-transition: all 0.5s ease 0.2s;
-	transition: all 0.5s ease 0.2s;
+	-webkit-transition: all 0.7s ease 0.2s;
+	transition: all 0.7s ease 0.2s;
 }
 
 .subtitle {
@@ -245,4 +245,40 @@ h1, h2, h3, h4, h5, h6 {
 	        perspective-origin: center top;
 	-webkit-transform: perspective(2000px) rotateY(360deg) translate(100px, -100px) scale(2);
 	        transform: perspective(2000px) rotateY(360deg) translate(100px, -100px) scale(2);
+}
+
+.translate3D__square {
+	background-color: #653a66;
+}
+.translate3D__square:hover {
+	-webkit-transform: perspective(700px) translate3d(50px, -50px, 200px);
+	        transform: perspective(700px) translate3d(50px, -50px, 200px);
+}
+
+.scale3D__square {
+	background-color: #3a6663;
+}
+.scale3D__square:hover {
+	-webkit-transform: perspective(700px) scale3d(2, 2, 5);
+	        transform: perspective(700px) scale3d(2, 2, 5);
+}
+
+.rotate3D__square {
+	background-color: #3a3c66;
+}
+.rotate3D__square:hover {
+	-webkit-transform: perspective(700px) rotate3d(1, 1, 1, 45deg);
+	        transform: perspective(700px) rotate3d(1, 1, 1, 45deg);
+}
+
+.matrix3D__title span {
+	text-transform: lowercase;
+	font-weight: 400;
+}
+.matrix3D__square {
+	background-color: #682323;
+}
+.matrix3D__square:hover {
+	-webkit-transform: matrix3d(0.5041, -0.71, 0.71, 0, 0.71, 0.5041, 0.71, 0, -0.71, -0.71, 0.5041, 0, 100, -100, 300, 1);
+	        transform: matrix3d(0.5041, -0.71, 0.71, 0, 0.71, 0.5041, 0.71, 0, -0.71, -0.71, 0.5041, 0, 100, -100, 300, 1);
 }
