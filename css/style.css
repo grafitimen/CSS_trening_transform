@@ -86,6 +86,16 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 	margin: 0 0 50px 0;
 }
+.title a {
+	color: #00ff7b;
+}
+
+.wrapper3d {
+	margin: 0 0 30px 0;
+	width: 250px;
+	height: 250px;
+	background-color: rgba(72, 72, 72, 0.5);
+}
 
 .square {
 	width: 250px;
@@ -104,7 +114,6 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 	-webkit-transition: all 0.5s ease 0.2s;
 	transition: all 0.5s ease 0.2s;
-	margin: 0 0 30px 0;
 }
 
 .subtitle {
@@ -197,4 +206,42 @@ h1, h2, h3, h4, h5, h6 {
 .multi__square:hover {
 	-webkit-transform: translate(50px, 50px) scale(1.5, 1.5) rotate(360deg);
 	        transform: translate(50px, 50px) scale(1.5, 1.5) rotate(360deg);
+}
+
+.transform-origin__square {
+	background-color: rgb(35, 63, 37);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	gap: 15px;
+	-webkit-transform-origin: bottom right;
+	        transform-origin: bottom right;
+}
+.transform-origin__square:hover {
+	-webkit-transform: rotate(30deg);
+	        transform: rotate(30deg);
+}
+
+.perspective__square {
+	background-color: rgb(13, 105, 37);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	gap: 15px;
+	-webkit-transition: 1.5s;
+	transition: 1.5s;
+}
+.perspective__square:hover {
+	-webkit-perspective-origin: center top;
+	        perspective-origin: center top;
+	-webkit-transform: perspective(2000px) rotateY(360deg) translate(100px, -100px) scale(2);
+	        transform: perspective(2000px) rotateY(360deg) translate(100px, -100px) scale(2);
 }
